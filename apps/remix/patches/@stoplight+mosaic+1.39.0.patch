@@ -1,0 +1,20 @@
+diff --git a/node_modules/@stoplight/mosaic/core.esm.js b/node_modules/@stoplight/mosaic/core.esm.js
+index e95a6ab..1a6eaba 100644
+--- a/node_modules/@stoplight/mosaic/core.esm.js
++++ b/node_modules/@stoplight/mosaic/core.esm.js
+@@ -25,6 +25,15 @@ import _domHelpersQueryPosition from 'dom-helpers/query/position';
+ import _domHelpersStyle from 'dom-helpers/style';
+ import { Key } from 'ts-keycode-enum';
+ 
++if(window) {
++  window.process = {
++    env: {
++      TEST_SSR: false,
++      NODE_ENV: 'production'
++    }
++  };
++}
++
+ const isPseudoObject = obj => obj && typeof obj === 'object';
+ 
+ const isNegative = v => {
