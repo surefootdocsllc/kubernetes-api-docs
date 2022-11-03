@@ -38,6 +38,7 @@ importers:
       rmx-cli: ^0.3.2
       start-server-and-test: ^1.14.0
       tailwindcss: ^3.1.8
+      tiny-invariant: ^1.3.1
     dependencies:
       '@apidevtools/swagger-parser': 10.1.0_openapi-types@12.0.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
@@ -54,6 +55,7 @@ importers:
       openapi-types: 12.0.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      tiny-invariant: 1.3.1
     devDependencies:
       '@remix-run/dev': 1.7.4_uroeops6y5plvzrhwx7fnuiija
       '@remix-run/eslint-config': 1.7.4_eslint@8.26.0+react@18.2.0
