@@ -7,22 +7,30 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import stoplightElementsStyles from '@stoplight/elements/styles.min.css';
+//import styles from "./styles/tailwind.css";
+
 export const meta = () => ({
   charset: "utf-8",
   title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
 
+export const links = () => [
+  //{ rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: stoplightElementsStyles }
+];
+
 // For /@stoplight/mosaic/core.esm.js
 const script = `
 if(window) {
-window.process = {
-  env: {
-    TEST_SSR: false,
-    NODE_ENV: 'production'
-  }
-};
-}  
+  window.process = {
+    env: {
+      TEST_SSR: false,
+      NODE_ENV: 'production'
+    }
+  };
+}
 `;
 
 export default function App() {
