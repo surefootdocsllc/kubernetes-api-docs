@@ -22,6 +22,7 @@ importers:
       eslint: ^8.23.1
       eslint-config-prettier: ^8.5.0
       eslint-plugin-cypress: ^2.12.1
+      fetch-openapis: workspace:*
       isbot: ^3.5.4
       mdast-util-frontmatter: ^0.2.0
       mkdirp: ^1.0.4
@@ -50,6 +51,7 @@ importers:
       '@stoplight/markdown-viewer': 5.5.1_twpkjwnw4yixnzasisncrc2nzy
       '@stoplight/mosaic': 1.39.0_biqbaboplfbrettd7655fr4n2y
       '@stoplight/mosaic-code-viewer': 1.39.0_biqbaboplfbrettd7655fr4n2y
+      fetch-openapis: link:../../packages/fetch-openapis
       isbot: 3.6.2
       mkdirp: 1.0.4
       openapi-types: 12.0.2
