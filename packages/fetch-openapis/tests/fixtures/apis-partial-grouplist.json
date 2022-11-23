@@ -1,0 +1,32 @@
+{
+  "kind": "APIGroupList",
+  "apiVersion": "v1",
+  "groups": [
+    {
+      "name": "autoscaling",
+      "versions": [
+        {
+          "groupVersion": "autoscaling/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "autoscaling/v2",
+        "version": "v2"
+      }
+    },
+    {
+      "name": "network.operator.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "network.operator.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "network.operator.openshift.io/v1",
+        "version": "v1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1505 @@
+[
+  {
+    "kind": "Binding",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1"
+  },
+  {
+    "kind": "ComponentStatus",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1"
+  },
+  {
+    "kind": "ConfigMap",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "qFsyl6wFWjQ="
+  },
+  {
+    "kind": "Endpoints",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "fWeeMqaN/OA="
+  },
+  {
+    "kind": "Event",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "r2yiGXH7wu8="
+  },
+  {
+    "kind": "LimitRange",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "EBKMFVe6cwo="
+  },
+  {
+    "kind": "Namespace",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "Q3oi5N2YM8M="
+  },
+  {
+    "kind": "Node",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "XwShjMxG9Fs="
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "QWTyNDq0dC4="
+  },
+  {
+    "kind": "PersistentVolume",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "HN/zwEC+JgM="
+  },
+  {
+    "kind": "Pod",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "xPOwRZ+Yhw8="
+  },
+  {
+    "kind": "PodTemplate",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "LIXB2x4IFpk="
+  },
+  {
+    "kind": "ReplicationController",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "Jond2If31h0="
+  },
+  {
+    "kind": "ResourceQuota",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "8uhSgffRX6w="
+  },
+  {
+    "kind": "Secret",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "S6u1pOWzb84="
+  },
+  {
+    "kind": "ServiceAccount",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "pbx9ZvyFpBE="
+  },
+  {
+    "kind": "Service",
+    "group": "",
+    "version": "v1",
+    "groupVersion": "v1",
+    "storageVersionHash": "0/CO1lhkEBI="
+  },
+  {
+    "kind": "APIService",
+    "group": "apiregistration.k8s.io",
+    "version": "v1",
+    "groupVersion": "apiregistration.k8s.io/v1",
+    "storageVersionHash": "InPBPD7+PqM="
+  },
+  {
+    "kind": "ControllerRevision",
+    "group": "apps",
+    "version": "v1",
+    "groupVersion": "apps/v1",
+    "storageVersionHash": "85nkx63pcBU="
+  },
+  {
+    "kind": "DaemonSet",
+    "group": "apps",
+    "version": "v1",
+    "groupVersion": "apps/v1",
+    "storageVersionHash": "dd7pWHUlMKQ="
+  },
+  {
+    "kind": "Deployment",
+    "group": "apps",
+    "version": "v1",
+    "groupVersion": "apps/v1",
+    "storageVersionHash": "8aSe+NMegvE="
+  },
+  {
+    "kind": "ReplicaSet",
+    "group": "apps",
+    "version": "v1",
+    "groupVersion": "apps/v1",
+    "storageVersionHash": "P1RzHs8/mWQ="
+  },
+  {
+    "kind": "StatefulSet",
+    "group": "apps",
+    "version": "v1",
+    "groupVersion": "apps/v1",
+    "storageVersionHash": "H+vl74LkKdo="
+  },
+  {
+    "kind": "Event",
+    "group": "events.k8s.io",
+    "version": "v1",
+    "groupVersion": "events.k8s.io/v1",
+    "storageVersionHash": "r2yiGXH7wu8="
+  },
+  {
+    "kind": "Event",
+    "group": "events.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "events.k8s.io/v1beta1",
+    "storageVersionHash": "r2yiGXH7wu8="
+  },
+  {
+    "kind": "TokenReview",
+    "group": "authentication.k8s.io",
+    "version": "v1",
+    "groupVersion": "authentication.k8s.io/v1"
+  },
+  {
+    "kind": "LocalSubjectAccessReview",
+    "group": "authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "authorization.k8s.io/v1"
+  },
+  {
+    "kind": "SelfSubjectAccessReview",
+    "group": "authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "authorization.k8s.io/v1"
+  },
+  {
+    "kind": "SelfSubjectRulesReview",
+    "group": "authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "authorization.k8s.io/v1"
+  },
+  {
+    "kind": "SubjectAccessReview",
+    "group": "authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "authorization.k8s.io/v1"
+  },
+  {
+    "kind": "HorizontalPodAutoscaler",
+    "group": "autoscaling",
+    "version": "v2",
+    "groupVersion": "autoscaling/v2",
+    "storageVersionHash": "oQlkt7f5j/A="
+  },
+  {
+    "kind": "HorizontalPodAutoscaler",
+    "group": "autoscaling",
+    "version": "v1",
+    "groupVersion": "autoscaling/v1",
+    "storageVersionHash": "oQlkt7f5j/A="
+  },
+  {
+    "kind": "HorizontalPodAutoscaler",
+    "group": "autoscaling",
+    "version": "v2beta1",
+    "groupVersion": "autoscaling/v2beta1",
+    "storageVersionHash": "oQlkt7f5j/A="
+  },
+  {
+    "kind": "HorizontalPodAutoscaler",
+    "group": "autoscaling",
+    "version": "v2beta2",
+    "groupVersion": "autoscaling/v2beta2",
+    "storageVersionHash": "oQlkt7f5j/A="
+  },
+  {
+    "kind": "CronJob",
+    "group": "batch",
+    "version": "v1",
+    "groupVersion": "batch/v1",
+    "storageVersionHash": "sd5LIXh4Fjs="
+  },
+  {
+    "kind": "Job",
+    "group": "batch",
+    "version": "v1",
+    "groupVersion": "batch/v1",
+    "storageVersionHash": "mudhfqk/qZY="
+  },
+  {
+    "kind": "CronJob",
+    "group": "batch",
+    "version": "v1beta1",
+    "groupVersion": "batch/v1beta1",
+    "storageVersionHash": "sd5LIXh4Fjs="
+  },
+  {
+    "kind": "CertificateSigningRequest",
+    "group": "certificates.k8s.io",
+    "version": "v1",
+    "groupVersion": "certificates.k8s.io/v1",
+    "storageVersionHash": "95fRKMXA+00="
+  },
+  {
+    "kind": "IngressClass",
+    "group": "networking.k8s.io",
+    "version": "v1",
+    "groupVersion": "networking.k8s.io/v1",
+    "storageVersionHash": "l/iqIbDgFyQ="
+  },
+  {
+    "kind": "Ingress",
+    "group": "networking.k8s.io",
+    "version": "v1",
+    "groupVersion": "networking.k8s.io/v1",
+    "storageVersionHash": "39NQlfNR+bo="
+  },
+  {
+    "kind": "NetworkPolicy",
+    "group": "networking.k8s.io",
+    "version": "v1",
+    "groupVersion": "networking.k8s.io/v1",
+    "storageVersionHash": "YpfwF18m1G8="
+  },
+  {
+    "kind": "PodDisruptionBudget",
+    "group": "policy",
+    "version": "v1",
+    "groupVersion": "policy/v1",
+    "storageVersionHash": "6BGBu0kpHtk="
+  },
+  {
+    "kind": "PodDisruptionBudget",
+    "group": "policy",
+    "version": "v1beta1",
+    "groupVersion": "policy/v1beta1",
+    "storageVersionHash": "6BGBu0kpHtk="
+  },
+  {
+    "kind": "PodSecurityPolicy",
+    "group": "policy",
+    "version": "v1beta1",
+    "groupVersion": "policy/v1beta1",
+    "storageVersionHash": "khBLobUXkqA="
+  },
+  {
+    "kind": "ClusterRoleBinding",
+    "group": "rbac.authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "rbac.authorization.k8s.io/v1",
+    "storageVersionHash": "48tpQ8gZHFc="
+  },
+  {
+    "kind": "ClusterRole",
+    "group": "rbac.authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "rbac.authorization.k8s.io/v1",
+    "storageVersionHash": "bYE5ZWDrJ44="
+  },
+  {
+    "kind": "RoleBinding",
+    "group": "rbac.authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "rbac.authorization.k8s.io/v1",
+    "storageVersionHash": "eGsCzGH6b1g="
+  },
+  {
+    "kind": "Role",
+    "group": "rbac.authorization.k8s.io",
+    "version": "v1",
+    "groupVersion": "rbac.authorization.k8s.io/v1",
+    "storageVersionHash": "7FuwZcIIItM="
+  },
+  {
+    "kind": "CSIDriver",
+    "group": "storage.k8s.io",
+    "version": "v1",
+    "groupVersion": "storage.k8s.io/v1",
+    "storageVersionHash": "hL6j/rwBV5w="
+  },
+  {
+    "kind": "CSINode",
+    "group": "storage.k8s.io",
+    "version": "v1",
+    "groupVersion": "storage.k8s.io/v1",
+    "storageVersionHash": "Pe62DkZtjuo="
+  },
+  {
+    "kind": "CSIStorageCapacity",
+    "group": "storage.k8s.io",
+    "version": "v1",
+    "groupVersion": "storage.k8s.io/v1",
+    "storageVersionHash": "4as6MA/kOg0="
+  },
+  {
+    "kind": "StorageClass",
+    "group": "storage.k8s.io",
+    "version": "v1",
+    "groupVersion": "storage.k8s.io/v1",
+    "storageVersionHash": "K+m6uJwbjGY="
+  },
+  {
+    "kind": "VolumeAttachment",
+    "group": "storage.k8s.io",
+    "version": "v1",
+    "groupVersion": "storage.k8s.io/v1",
+    "storageVersionHash": "tJx/ezt6UDU="
+  },
+  {
+    "kind": "CSIStorageCapacity",
+    "group": "storage.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "storage.k8s.io/v1beta1",
+    "storageVersionHash": "4as6MA/kOg0="
+  },
+  {
+    "kind": "MutatingWebhookConfiguration",
+    "group": "admissionregistration.k8s.io",
+    "version": "v1",
+    "groupVersion": "admissionregistration.k8s.io/v1",
+    "storageVersionHash": "Sqi0GUgDaX0="
+  },
+  {
+    "kind": "ValidatingWebhookConfiguration",
+    "group": "admissionregistration.k8s.io",
+    "version": "v1",
+    "groupVersion": "admissionregistration.k8s.io/v1",
+    "storageVersionHash": "B0wHjQmsGNk="
+  },
+  {
+    "kind": "CustomResourceDefinition",
+    "group": "apiextensions.k8s.io",
+    "version": "v1",
+    "groupVersion": "apiextensions.k8s.io/v1",
+    "storageVersionHash": "jfWCUB31mvA="
+  },
+  {
+    "kind": "PriorityClass",
+    "group": "scheduling.k8s.io",
+    "version": "v1",
+    "groupVersion": "scheduling.k8s.io/v1",
+    "storageVersionHash": "1QwjyaZjj3Y="
+  },
+  {
+    "kind": "Lease",
+    "group": "coordination.k8s.io",
+    "version": "v1",
+    "groupVersion": "coordination.k8s.io/v1",
+    "storageVersionHash": "gqkMMb/YqFM="
+  },
+  {
+    "kind": "RuntimeClass",
+    "group": "node.k8s.io",
+    "version": "v1",
+    "groupVersion": "node.k8s.io/v1",
+    "storageVersionHash": "WQTu1GL3T2Q="
+  },
+  {
+    "kind": "RuntimeClass",
+    "group": "node.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "node.k8s.io/v1beta1",
+    "storageVersionHash": "WQTu1GL3T2Q="
+  },
+  {
+    "kind": "EndpointSlice",
+    "group": "discovery.k8s.io",
+    "version": "v1",
+    "groupVersion": "discovery.k8s.io/v1",
+    "storageVersionHash": "Nx3SIv6I0mE="
+  },
+  {
+    "kind": "EndpointSlice",
+    "group": "discovery.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "discovery.k8s.io/v1beta1",
+    "storageVersionHash": "Nx3SIv6I0mE="
+  },
+  {
+    "kind": "FlowSchema",
+    "group": "flowcontrol.apiserver.k8s.io",
+    "version": "v1beta2",
+    "groupVersion": "flowcontrol.apiserver.k8s.io/v1beta2",
+    "storageVersionHash": "9bSnTLYweJ0="
+  },
+  {
+    "kind": "PriorityLevelConfiguration",
+    "group": "flowcontrol.apiserver.k8s.io",
+    "version": "v1beta2",
+    "groupVersion": "flowcontrol.apiserver.k8s.io/v1beta2",
+    "storageVersionHash": "BFVwf8eYnsw="
+  },
+  {
+    "kind": "FlowSchema",
+    "group": "flowcontrol.apiserver.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "flowcontrol.apiserver.k8s.io/v1beta1",
+    "storageVersionHash": "9bSnTLYweJ0="
+  },
+  {
+    "kind": "PriorityLevelConfiguration",
+    "group": "flowcontrol.apiserver.k8s.io",
+    "version": "v1beta1",
+    "groupVersion": "flowcontrol.apiserver.k8s.io/v1beta1",
+    "storageVersionHash": "BFVwf8eYnsw="
+  },
+  {
+    "kind": "DeploymentConfig",
+    "group": "apps.openshift.io",
+    "version": "v1",
+    "groupVersion": "apps.openshift.io/v1",
+    "storageVersionHash": "6xyoXGsxfiA="
+  },
+  {
+    "kind": "ClusterRoleBinding",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "ClusterRole",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "LocalResourceAccessReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "LocalSubjectAccessReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "ResourceAccessReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "RoleBindingRestriction",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "RoleBinding",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "Role",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "SelfSubjectRulesReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "SubjectAccessReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "SubjectRulesReview",
+    "group": "authorization.openshift.io",
+    "version": "v1",
+    "groupVersion": "authorization.openshift.io/v1"
+  },
+  {
+    "kind": "BuildConfig",
+    "group": "build.openshift.io",
+    "version": "v1",
+    "groupVersion": "build.openshift.io/v1",
+    "storageVersionHash": "2ooe95Eo6Y4="
+  },
+  {
+    "kind": "Build",
+    "group": "build.openshift.io",
+    "version": "v1",
+    "groupVersion": "build.openshift.io/v1",
+    "storageVersionHash": "Iv+mFnvyzFc="
+  },
+  {
+    "kind": "Image",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1",
+    "storageVersionHash": "FX/i8Tt+3Fc="
+  },
+  {
+    "kind": "ImageSignature",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "ImageStreamImage",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "ImageStreamImport",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "ImageStreamMapping",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "ImageStream",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1",
+    "storageVersionHash": "mwmf9lCqOiA="
+  },
+  {
+    "kind": "ImageStreamTag",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "ImageTag",
+    "group": "image.openshift.io",
+    "version": "v1",
+    "groupVersion": "image.openshift.io/v1"
+  },
+  {
+    "kind": "OAuthAccessToken",
+    "group": "oauth.openshift.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1",
+    "storageVersionHash": "Hss+eIbWaq4="
+  },
+  {
+    "kind": "OAuthAuthorizeToken",
+    "group": "oauth.openshift.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1",
+    "storageVersionHash": "boIUgj6jo8I="
+  },
+  {
+    "kind": "OAuthClientAuthorization",
+    "group": "oauth.openshift.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1",
+    "storageVersionHash": "Q0jsEj2AFkk="
+  },
+  {
+    "kind": "OAuthClient",
+    "group": "oauth.openshift.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1",
+    "storageVersionHash": "8NZGiGeCmFo="
+  },
+  {
+    "kind": "TokenReview",
+    "group": "authentication.k8s.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1"
+  },
+  {
+    "kind": "UserOAuthAccessToken",
+    "group": "oauth.openshift.io",
+    "version": "v1",
+    "groupVersion": "oauth.openshift.io/v1"
+  },
+  {
+    "kind": "ProjectRequest",
+    "group": "project.openshift.io",
+    "version": "v1",
+    "groupVersion": "project.openshift.io/v1"
+  },
+  {
+    "kind": "Project",
+    "group": "project.openshift.io",
+    "version": "v1",
+    "groupVersion": "project.openshift.io/v1"
+  },
+  {
+    "kind": "AppliedClusterResourceQuota",
+    "group": "quota.openshift.io",
+    "version": "v1",
+    "groupVersion": "quota.openshift.io/v1"
+  },
+  {
+    "kind": "ClusterResourceQuota",
+    "group": "quota.openshift.io",
+    "version": "v1",
+    "groupVersion": "quota.openshift.io/v1"
+  },
+  {
+    "kind": "Route",
+    "group": "route.openshift.io",
+    "version": "v1",
+    "groupVersion": "route.openshift.io/v1",
+    "storageVersionHash": "jo1F7GfnXH4="
+  },
+  {
+    "kind": "PodSecurityPolicyReview",
+    "group": "security.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.openshift.io/v1"
+  },
+  {
+    "kind": "PodSecurityPolicySelfSubjectReview",
+    "group": "security.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.openshift.io/v1"
+  },
+  {
+    "kind": "PodSecurityPolicySubjectReview",
+    "group": "security.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.openshift.io/v1"
+  },
+  {
+    "kind": "RangeAllocation",
+    "group": "security.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.openshift.io/v1",
+    "storageVersionHash": "8/BJx/M8Ga0="
+  },
+  {
+    "kind": "SecurityContextConstraints",
+    "group": "security.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.openshift.io/v1"
+  },
+  {
+    "kind": "BrokerTemplateInstance",
+    "group": "template.openshift.io",
+    "version": "v1",
+    "groupVersion": "template.openshift.io/v1",
+    "storageVersionHash": "Jxj8HlN0pXU="
+  },
+  {
+    "kind": "Template",
+    "group": "template.openshift.io",
+    "version": "v1",
+    "groupVersion": "template.openshift.io/v1"
+  },
+  {
+    "kind": "TemplateInstance",
+    "group": "template.openshift.io",
+    "version": "v1",
+    "groupVersion": "template.openshift.io/v1",
+    "storageVersionHash": "Q8UwfyPqly4="
+  },
+  {
+    "kind": "Template",
+    "group": "template.openshift.io",
+    "version": "v1",
+    "groupVersion": "template.openshift.io/v1",
+    "storageVersionHash": "utuWisMumJk="
+  },
+  {
+    "kind": "Group",
+    "group": "user.openshift.io",
+    "version": "v1",
+    "groupVersion": "user.openshift.io/v1",
+    "storageVersionHash": "YhnYEx+IpBw="
+  },
+  {
+    "kind": "Identity",
+    "group": "user.openshift.io",
+    "version": "v1",
+    "groupVersion": "user.openshift.io/v1",
+    "storageVersionHash": "/S8uaPXlz9c="
+  },
+  {
+    "kind": "UserIdentityMapping",
+    "group": "user.openshift.io",
+    "version": "v1",
+    "groupVersion": "user.openshift.io/v1"
+  },
+  {
+    "kind": "User",
+    "group": "user.openshift.io",
+    "version": "v1",
+    "groupVersion": "user.openshift.io/v1",
+    "storageVersionHash": "Hbwv6GYPwoQ="
+  },
+  {
+    "kind": "PackageManifest",
+    "group": "packages.operators.coreos.com",
+    "version": "v1",
+    "groupVersion": "packages.operators.coreos.com/v1"
+  },
+  {
+    "kind": "Console",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "0HpeDULnQWY="
+  },
+  {
+    "kind": "Infrastructure",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "s/S0qwLEaK4="
+  },
+  {
+    "kind": "ClusterVersion",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "jfyZTemckiE="
+  },
+  {
+    "kind": "Build",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "OCpV5nXxruQ="
+  },
+  {
+    "kind": "Image",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "6sMalKeq6tY="
+  },
+  {
+    "kind": "ImageContentPolicy",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "4sS3ccaNRA4="
+  },
+  {
+    "kind": "Ingress",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "PHiQOptbYkg="
+  },
+  {
+    "kind": "OAuth",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "4BZS3Rc6+4g="
+  },
+  {
+    "kind": "Network",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "gAEoywwmFz4="
+  },
+  {
+    "kind": "Node",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "QOl4Ml/XMag="
+  },
+  {
+    "kind": "Project",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "q4gdBJZsxYc="
+  },
+  {
+    "kind": "Proxy",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "2I4SQ6PshRY="
+  },
+  {
+    "kind": "ClusterOperator",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "hIXM1ouzyag="
+  },
+  {
+    "kind": "APIServer",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "yr4VqIMvOkg="
+  },
+  {
+    "kind": "DNS",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "SAHetG08gBY="
+  },
+  {
+    "kind": "Authentication",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "GY8wWr8iSHA="
+  },
+  {
+    "kind": "Scheduler",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "ptedUcY9aMg="
+  },
+  {
+    "kind": "FeatureGate",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "HSu6crTvi5E="
+  },
+  {
+    "kind": "OperatorHub",
+    "group": "config.openshift.io",
+    "version": "v1",
+    "groupVersion": "config.openshift.io/v1",
+    "storageVersionHash": "O7bQeZSTFtM="
+  },
+  {
+    "kind": "Authentication",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "0+ezrHhttAw="
+  },
+  {
+    "kind": "KubeAPIServer",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "fq0dmqlYzhg="
+  },
+  {
+    "kind": "DNS",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "G9905aqbo/s="
+  },
+  {
+    "kind": "Config",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "Bt48MmgSCbA="
+  },
+  {
+    "kind": "KubeScheduler",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "LqQcZlG4oI4="
+  },
+  {
+    "kind": "Storage",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "NnBYY8EyXNM="
+  },
+  {
+    "kind": "KubeControllerManager",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "0u2SGVIGzgI="
+  },
+  {
+    "kind": "Network",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "JuI4WtFKtMI="
+  },
+  {
+    "kind": "Etcd",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "ro9YGgxMvm8="
+  },
+  {
+    "kind": "KubeStorageVersionMigrator",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "8YwaYb4U1KA="
+  },
+  {
+    "kind": "OpenShiftAPIServer",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "wTEwJGUaNBs="
+  },
+  {
+    "kind": "Console",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "pq3HXY/v/IM="
+  },
+  {
+    "kind": "ServiceCA",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "+DF3a5EUlMc="
+  },
+  {
+    "kind": "OpenShiftControllerManager",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "hPPlE6lZ+MQ="
+  },
+  {
+    "kind": "ClusterCSIDriver",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "/WO1MfazznM="
+  },
+  {
+    "kind": "CloudCredential",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "rJ9MVOyFQKo="
+  },
+  {
+    "kind": "CSISnapshotController",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "bFbcgq1iZzM="
+  },
+  {
+    "kind": "IngressController",
+    "group": "operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "operator.openshift.io/v1",
+    "storageVersionHash": "3HualLCmNv8="
+  },
+  {
+    "kind": "ImageContentSourcePolicy",
+    "group": "operator.openshift.io",
+    "version": "v1alpha1",
+    "groupVersion": "operator.openshift.io/v1alpha1",
+    "storageVersionHash": "SlI7gNbjdUA="
+  },
+  {
+    "kind": "APIRequestCount",
+    "group": "apiserver.openshift.io",
+    "version": "v1",
+    "groupVersion": "apiserver.openshift.io/v1",
+    "storageVersionHash": "S/jlubifV1Y="
+  },
+  {
+    "kind": "ClusterAutoscaler",
+    "group": "autoscaling.openshift.io",
+    "version": "v1",
+    "groupVersion": "autoscaling.openshift.io/v1",
+    "storageVersionHash": "zBaLBLdlZGk="
+  },
+  {
+    "kind": "MachineAutoscaler",
+    "group": "autoscaling.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "autoscaling.openshift.io/v1beta1",
+    "storageVersionHash": "ZDYdQVLj5g4="
+  },
+  {
+    "kind": "CredentialsRequest",
+    "group": "cloudcredential.openshift.io",
+    "version": "v1",
+    "groupVersion": "cloudcredential.openshift.io/v1",
+    "storageVersionHash": "Y1KpLs3mWDk="
+  },
+  {
+    "kind": "ConsoleNotification",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "fjLb6xIjTp8="
+  },
+  {
+    "kind": "ConsoleQuickStart",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "jjkxMYsy4hY="
+  },
+  {
+    "kind": "ConsoleYAMLSample",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "/0X4p1qvFq0="
+  },
+  {
+    "kind": "ConsoleExternalLogLink",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "JNNWRK5+6qk="
+  },
+  {
+    "kind": "ConsoleLink",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "QMa1yrz2A1Q="
+  },
+  {
+    "kind": "ConsoleCLIDownload",
+    "group": "console.openshift.io",
+    "version": "v1",
+    "groupVersion": "console.openshift.io/v1",
+    "storageVersionHash": "hTsPKGVbEc0="
+  },
+  {
+    "kind": "ConsolePlugin",
+    "group": "console.openshift.io",
+    "version": "v1alpha1",
+    "groupVersion": "console.openshift.io/v1alpha1",
+    "storageVersionHash": "ACCeQvz0mH0="
+  },
+  {
+    "kind": "Config",
+    "group": "imageregistry.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "imageregistry.operator.openshift.io/v1",
+    "storageVersionHash": "ezezfcipwsQ="
+  },
+  {
+    "kind": "ImagePruner",
+    "group": "imageregistry.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "imageregistry.operator.openshift.io/v1",
+    "storageVersionHash": "csaZlx1bqEc="
+  },
+  {
+    "kind": "DNSRecord",
+    "group": "ingress.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "ingress.operator.openshift.io/v1",
+    "storageVersionHash": "S3Nu5BOcJQA="
+  },
+  {
+    "kind": "NetworkAttachmentDefinition",
+    "group": "k8s.cni.cncf.io",
+    "version": "v1",
+    "groupVersion": "k8s.cni.cncf.io/v1",
+    "storageVersionHash": "BNF/SJ3/If4="
+  },
+  {
+    "kind": "ControllerConfig",
+    "group": "machineconfiguration.openshift.io",
+    "version": "v1",
+    "groupVersion": "machineconfiguration.openshift.io/v1",
+    "storageVersionHash": "pooMJA5+L2U="
+  },
+  {
+    "kind": "ContainerRuntimeConfig",
+    "group": "machineconfiguration.openshift.io",
+    "version": "v1",
+    "groupVersion": "machineconfiguration.openshift.io/v1",
+    "storageVersionHash": "zQKIZo2axmg="
+  },
+  {
+    "kind": "MachineConfig",
+    "group": "machineconfiguration.openshift.io",
+    "version": "v1",
+    "groupVersion": "machineconfiguration.openshift.io/v1",
+    "storageVersionHash": "BDX8m3QUIEc="
+  },
+  {
+    "kind": "KubeletConfig",
+    "group": "machineconfiguration.openshift.io",
+    "version": "v1",
+    "groupVersion": "machineconfiguration.openshift.io/v1",
+    "storageVersionHash": "d0/BkupJ0L0="
+  },
+  {
+    "kind": "MachineConfigPool",
+    "group": "machineconfiguration.openshift.io",
+    "version": "v1",
+    "groupVersion": "machineconfiguration.openshift.io/v1",
+    "storageVersionHash": "hxLDUtTOjtU="
+  },
+  {
+    "kind": "Probe",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "x4d99qNb5YI="
+  },
+  {
+    "kind": "Prometheus",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "C8naPY4eojU="
+  },
+  {
+    "kind": "PodMonitor",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "t6BHpUAzPig="
+  },
+  {
+    "kind": "ThanosRuler",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "YBxpg/kA6UI="
+  },
+  {
+    "kind": "ServiceMonitor",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "JLhPcfa+5xE="
+  },
+  {
+    "kind": "Alertmanager",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "NshW3zg1K7o="
+  },
+  {
+    "kind": "PrometheusRule",
+    "group": "monitoring.coreos.com",
+    "version": "v1",
+    "groupVersion": "monitoring.coreos.com/v1",
+    "storageVersionHash": "RSJ8iG+KDOo="
+  },
+  {
+    "kind": "AlertmanagerConfig",
+    "group": "monitoring.coreos.com",
+    "version": "v1beta1",
+    "groupVersion": "monitoring.coreos.com/v1beta1",
+    "storageVersionHash": "95DNJ6wsUCg="
+  },
+  {
+    "kind": "AlertmanagerConfig",
+    "group": "monitoring.coreos.com",
+    "version": "v1alpha1",
+    "groupVersion": "monitoring.coreos.com/v1alpha1",
+    "storageVersionHash": "95DNJ6wsUCg="
+  },
+  {
+    "kind": "NetNamespace",
+    "group": "network.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.openshift.io/v1",
+    "storageVersionHash": "wF0kNnaqHak="
+  },
+  {
+    "kind": "ClusterNetwork",
+    "group": "network.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.openshift.io/v1",
+    "storageVersionHash": "auQsassZNlY="
+  },
+  {
+    "kind": "EgressNetworkPolicy",
+    "group": "network.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.openshift.io/v1",
+    "storageVersionHash": "HMi9agCKOMY="
+  },
+  {
+    "kind": "HostSubnet",
+    "group": "network.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.openshift.io/v1",
+    "storageVersionHash": "bNBR0awPHLM="
+  },
+  {
+    "kind": "OperatorPKI",
+    "group": "network.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.operator.openshift.io/v1",
+    "storageVersionHash": "05e+cURVIcw="
+  },
+  {
+    "kind": "EgressRouter",
+    "group": "network.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "network.operator.openshift.io/v1",
+    "storageVersionHash": "whcNhkpRCxc="
+  },
+  {
+    "kind": "OperatorCondition",
+    "group": "operators.coreos.com",
+    "version": "v2",
+    "groupVersion": "operators.coreos.com/v2",
+    "storageVersionHash": "Cil3d/t/Kpc="
+  },
+  {
+    "kind": "Operator",
+    "group": "operators.coreos.com",
+    "version": "v1",
+    "groupVersion": "operators.coreos.com/v1",
+    "storageVersionHash": "G7jRFeS6JKo="
+  },
+  {
+    "kind": "OLMConfig",
+    "group": "operators.coreos.com",
+    "version": "v1",
+    "groupVersion": "operators.coreos.com/v1",
+    "storageVersionHash": "rV2ESbqnZdM="
+  },
+  {
+    "kind": "OperatorGroup",
+    "group": "operators.coreos.com",
+    "version": "v1",
+    "groupVersion": "operators.coreos.com/v1",
+    "storageVersionHash": "smrHN4vKoms="
+  },
+  {
+    "kind": "OperatorCondition",
+    "group": "operators.coreos.com",
+    "version": "v1",
+    "groupVersion": "operators.coreos.com/v1",
+    "storageVersionHash": "Cil3d/t/Kpc="
+  },
+  {
+    "kind": "OperatorGroup",
+    "group": "operators.coreos.com",
+    "version": "v1alpha2",
+    "groupVersion": "operators.coreos.com/v1alpha2",
+    "storageVersionHash": "smrHN4vKoms="
+  },
+  {
+    "kind": "Subscription",
+    "group": "operators.coreos.com",
+    "version": "v1alpha1",
+    "groupVersion": "operators.coreos.com/v1alpha1",
+    "storageVersionHash": "cJUAl67Y7C4="
+  },
+  {
+    "kind": "CatalogSource",
+    "group": "operators.coreos.com",
+    "version": "v1alpha1",
+    "groupVersion": "operators.coreos.com/v1alpha1",
+    "storageVersionHash": "58Nwkl8WW7w="
+  },
+  {
+    "kind": "InstallPlan",
+    "group": "operators.coreos.com",
+    "version": "v1alpha1",
+    "groupVersion": "operators.coreos.com/v1alpha1",
+    "storageVersionHash": "6gw8IwttiW4="
+  },
+  {
+    "kind": "ClusterServiceVersion",
+    "group": "operators.coreos.com",
+    "version": "v1alpha1",
+    "groupVersion": "operators.coreos.com/v1alpha1",
+    "storageVersionHash": "bafXBXMPCeY="
+  },
+  {
+    "kind": "PerformanceProfile",
+    "group": "performance.openshift.io",
+    "version": "v2",
+    "groupVersion": "performance.openshift.io/v2",
+    "storageVersionHash": "+AfVMGb9Yeo="
+  },
+  {
+    "kind": "PerformanceProfile",
+    "group": "performance.openshift.io",
+    "version": "v1",
+    "groupVersion": "performance.openshift.io/v1",
+    "storageVersionHash": "+AfVMGb9Yeo="
+  },
+  {
+    "kind": "PerformanceProfile",
+    "group": "performance.openshift.io",
+    "version": "v1alpha1",
+    "groupVersion": "performance.openshift.io/v1alpha1",
+    "storageVersionHash": "+AfVMGb9Yeo="
+  },
+  {
+    "kind": "Config",
+    "group": "samples.operator.openshift.io",
+    "version": "v1",
+    "groupVersion": "samples.operator.openshift.io/v1",
+    "storageVersionHash": "ky0OJqa2Yqg="
+  },
+  {
+    "kind": "RangeAllocation",
+    "group": "security.internal.openshift.io",
+    "version": "v1",
+    "groupVersion": "security.internal.openshift.io/v1",
+    "storageVersionHash": "qZRTPsGHJXw="
+  },
+  {
+    "kind": "Profile",
+    "group": "tuned.openshift.io",
+    "version": "v1",
+    "groupVersion": "tuned.openshift.io/v1",
+    "storageVersionHash": "Ymd5utw2PCg="
+  },
+  {
+    "kind": "Tuned",
+    "group": "tuned.openshift.io",
+    "version": "v1",
+    "groupVersion": "tuned.openshift.io/v1",
+    "storageVersionHash": "UFSFmIApyE0="
+  },
+  {
+    "kind": "PodNetworkConnectivityCheck",
+    "group": "controlplane.operator.openshift.io",
+    "version": "v1alpha1",
+    "groupVersion": "controlplane.operator.openshift.io/v1alpha1",
+    "storageVersionHash": "OAM77/d6N/I="
+  },
+  {
+    "kind": "FirmwareSchema",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "qcYszB47DJE="
+  },
+  {
+    "kind": "BareMetalHost",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "6I9mpSMReUg="
+  },
+  {
+    "kind": "BMCEventSubscription",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "igD4aTghQJ0="
+  },
+  {
+    "kind": "Provisioning",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "MFsHXPBs+No="
+  },
+  {
+    "kind": "PreprovisioningImage",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "+h3tQm2OJHg="
+  },
+  {
+    "kind": "HostFirmwareSettings",
+    "group": "metal3.io",
+    "version": "v1alpha1",
+    "groupVersion": "metal3.io/v1alpha1",
+    "storageVersionHash": "Ok8ThNUbb4U="
+  },
+  {
+    "kind": "StorageVersionMigration",
+    "group": "migration.k8s.io",
+    "version": "v1alpha1",
+    "groupVersion": "migration.k8s.io/v1alpha1",
+    "storageVersionHash": "X3bkZSayqxI="
+  },
+  {
+    "kind": "StorageState",
+    "group": "migration.k8s.io",
+    "version": "v1alpha1",
+    "groupVersion": "migration.k8s.io/v1alpha1",
+    "storageVersionHash": "7abAo0yHdNM="
+  },
+  {
+    "kind": "IPPool",
+    "group": "whereabouts.cni.cncf.io",
+    "version": "v1alpha1",
+    "groupVersion": "whereabouts.cni.cncf.io/v1alpha1",
+    "storageVersionHash": "XbcZnDfxtSo="
+  },
+  {
+    "kind": "OverlappingRangeIPReservation",
+    "group": "whereabouts.cni.cncf.io",
+    "version": "v1alpha1",
+    "groupVersion": "whereabouts.cni.cncf.io/v1alpha1",
+    "storageVersionHash": "QAFn0NjLYV0="
+  },
+  {
+    "kind": "HelmChartRepository",
+    "group": "helm.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "helm.openshift.io/v1beta1",
+    "storageVersionHash": "ufyXG8CiCus="
+  },
+  {
+    "kind": "ProjectHelmChartRepository",
+    "group": "helm.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "helm.openshift.io/v1beta1",
+    "storageVersionHash": "u99qLV2ifAE="
+  },
+  {
+    "kind": "MachineHealthCheck",
+    "group": "machine.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "machine.openshift.io/v1beta1",
+    "storageVersionHash": "qvQyPZn5SE8="
+  },
+  {
+    "kind": "MachineSet",
+    "group": "machine.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "machine.openshift.io/v1beta1",
+    "storageVersionHash": "p7ZEIilFKZ0="
+  },
+  {
+    "kind": "Machine",
+    "group": "machine.openshift.io",
+    "version": "v1beta1",
+    "groupVersion": "machine.openshift.io/v1beta1",
+    "storageVersionHash": "GLEf6/W/4xY="
+  }
+]
