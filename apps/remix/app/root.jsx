@@ -1,3 +1,4 @@
+import { useLoaderData } from "@remix-run/react";
 import {
   Links,
   LiveReload,
@@ -6,18 +7,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { json } from "@remix-run/node";
 
-import stoplightElementsStyles from '@stoplight/elements/styles.min.css';
-//import styles from "./styles/tailwind.css";
+import fetchOpenApis from "fetch-openapis";
 
-export const meta = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
-});
+import { Grid, List, Button } from 'semantic-ui-react';
 
 import semanticUiStyles from 'semantic-ui-css/semantic.min.css';
 import globalStyles from './styles/global.css';
+//import styles from "./styles/tailwind.css";
 
 // For /@stoplight/mosaic/core.esm.js
 const script = `
@@ -41,7 +39,15 @@ export const links = () => [
   { rel: "stylesheet", href: globalStyles },
   { rel: "stylesheet", href: semanticUiStyles }
 ];
+
+export async function loader() {
+  const { getAllResources } = fetchOpenApis();
+  const data = await getAllResources();
+  return json(data);
+}
+
 export default function App() {
+  const apis = useLoaderData();
   return (
     <html lang="en">
       <head>
