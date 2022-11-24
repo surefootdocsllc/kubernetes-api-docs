@@ -2,11 +2,14 @@ import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 import { JsonSchemaViewer } from "@stoplight/json-schema-viewer";
+import stoplightElementsStyles from '@stoplight/elements/styles.min.css';
 
 import swagger from '@apidevtools/swagger-parser';
 import invariant from "tiny-invariant";
 
-const schema = require('../network-operator.json');
+export const links = () => [
+  { rel: "stylesheet", href: stoplightElementsStyles }
+];
 
 export const loader = async ({ params }) => {
   const { kind, group, version } = params;
