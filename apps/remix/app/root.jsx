@@ -56,7 +56,18 @@ export default function App() {
         <script dangerouslySetInnerHTML={{__html: script}} />
       </head>
       <body>
-        <Outlet />
+        <Grid>
+          <Grid.Column key='a' width={3}>
+            <List>
+            {
+              apis.map(({ kind, group, version }, idx) => <List.Item key={idx} as="a">{kind}</List.Item>)
+            }
+            </List>
+          </Grid.Column>
+          <Grid.Column key='b' width={13} stretched>
+            <Outlet />
+          </Grid.Column>
+        </Grid>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
