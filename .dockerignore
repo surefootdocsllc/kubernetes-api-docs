@@ -1,0 +1,30 @@
+#/node_modules
+#*.log
+#.DS_Store
+#.env
+
+# https://github.com/saleor/react-storefront/pull/528/files
+
+# ignore everything
+*
+
+# Allow those files & directories
+!/apps
+!/packages
+!/.env
+!/.npmrc
+!/package.json
+!/pnpm-lock.yaml
+!/pnpm-workspace.yaml
+!/.gitignore
+
+# Ignore from allowed directories
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.db
+**/node_modules/*
+**/Dockerfile*
+**/public/build
+**/build
+**/.cache
