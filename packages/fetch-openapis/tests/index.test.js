@@ -1,44 +1,51 @@
 const { describe } = require('riteway');
-const fs = require('fs/promises');
 
-const readFixture = async (fixtureFile) => {
-  let jsonData = {};
-  try {
-    jsonData = JSON.parse(await fs.readFile(`${__dirname}/fixtures/${fixtureFile}.json`));
-    console.log(jsonData);
-  }
-  catch(e) {
-    console.error(e.message);
-  }
-  return jsonData;
-}
+const axios = require('axios');
+const axiosMock = require("axios-mock-adapter");
+const mock = new axiosMock(axios);
 
-// "kind": "APIGroupList",
-// "apiVersion": "v1",
-function getGroups({ groups }) {
-  return groups.reduce((flatGroups, group) => {
-    const { name, versions, preferredVersion } = group;
-    const flatGroup = versions.map(({ version, groupVersion }) => ({
-      name, version, groupVersion, preferred: preferredVersion.groupVersion == groupVersion
-    }));
-    return [ ...flatGroups, ...flatGroup ];
-  }, []);
-}
+const { readFixture } = require('./util');
 
-// "kind": "APIResourceList",
-// "groupVersion": "v1",
-function getResources({ groupVersion, resources }) {
-  const parts = groupVersion.split('/');
-  const version = parts.pop();
-  const group = parts.length == 1 ? '' : parts[0];
-  return resources.reduce((flatResources, resource) => {
-    const { name } = resource;
-    return [ ...flatResources, { name, group, version, groupVersion, storageVersionHash } ];
-  }, []);
-}
+const { getResources, getGroups, fetchApiGroupResources, fetchApiGroups, fetchOpenApiSpec } = require('../lib');
 
 describe('test', async assert => {
   const json = await readFixture('apis-crd-endpoint');
   const final = getGroups(json);
-  console.log(final);
+  //console.log(final);
+});
+
+describe('fetch API group resources', async assert => {
+  const data = await readFixture('api-v1-k8s-endpoint');
+  mock.onGet(/api/).reply(() => {
+    return [200, data];
+  });
+
+  const r = await fetchApiGroupResources({ group: 'group', version: 'ver', hostAndPort: 'aaa:33' });
+  //console.log(r);
+});
+
+describe('fetchApiGroups()', async assert => {
+  const data = await readFixture('apis-crd-endpoint');
+  mock.onGet(/api/).reply(() => {
+    return [200, data];
+  });
+
+  assert({
+    given: 'a group and host',
+    should: 'fetch available API groups',
+    actual: await fetchApiGroups({ group: 'autoscaling', hostAndPort: 'any' }).then(v => v.length),
+    expected: 78
+  });
+
+});
+
+describe('fetchOpenApiSpec()', async assert => {
+  const data = await readFixture('autoscaling-v1-openapi3');
+  mock.onGet(/api/).reply(() => {
+    return [200, data];
+  });
+
+  const r = await fetchOpenApiSpec({
+    kind: 'HorizontalPodAutoscaler', group: 'autoscaling', version: 'v1', hostAndPort: 'any'
+  });
 });

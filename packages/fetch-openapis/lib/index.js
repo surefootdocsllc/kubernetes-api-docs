@@ -1,4 +1,3 @@
-const axios = require('axios');
 const OpenApiParser = require('swagger-parser');
 
 /*
@@ -36,7 +35,8 @@ const handleAxiosException = err => {
   // status:401
   //statusText:'Unauthorized'
   if(response) {
-    console.error(`${request.path}: ${response.status}: ${response.statusText}`);
+    const { status, statusText } = response;
+    console.error(`${response.config.url}: ${status}${statusText ? ' : ' + statusText : ''}`);
   }
   // 'ECONNREFUSED'
   else if(request) {
@@ -51,14 +51,10 @@ const handleAxiosException = err => {
 /**
  * Gets a list of APIs within an API group.
  */
-async function fetchApiGroupResources({ group, version, hostAndPort, secure = true } = {}) {
+async function fetchApiGroupResources($axios, { group, version } = {}) {
   var httpResponse;
-  if(!hostAndPort) throw(new Error('You must specify `hostAndPort`'));
-  //if(!group) throw(new Error('You must specify an API `group`'));
-  //if(!version) throw(new Error('You must specify an API `version`'));
 
   const buildUrlFns = [
-    () => `http${secure ? 's' : ''}://${hostAndPort}`,
     () => `${group ? [k8sCrdDiscoveryPath, '/'].join('') : k8sCoreDiscoveryPath}`,
     () => `${group ? [group, '/'].join('') : ''}`,
     () => `${version ? version : ''}`
@@ -66,7 +62,7 @@ async function fetchApiGroupResources({ group, version, hostAndPort, secure = tr
   const apiUrl = buildUrlFns.reduce((accum, fn) => accum.concat(fn()), []).join('');
 
   try {
-    httpResponse = await axios.get(apiUrl);
+    httpResponse = await $axios.get(apiUrl);
   }
   catch(err) {
     handleAxiosException(err);
@@ -79,12 +75,12 @@ async function fetchApiGroupResources({ group, version, hostAndPort, secure = tr
 /**
  * Gets a list of API groups.
  */
-async function fetchApiGroups({ hostAndPort, crds = false, secure = true } = {}) {
-  const apiUrl = `http${secure ? 's' : ''}://${hostAndPort}${ crds ? k8sCrdDiscoveryPath : k8sCoreDiscoveryPath }`;
+async function fetchApiGroups($axios, { crds = false } = {}) {
+  const apiUrl = `${ crds ? k8sCrdDiscoveryPath : k8sCoreDiscoveryPath }`;
   var httpResponse;
 
   try {
-    httpResponse = await axios.get(apiUrl);
+    httpResponse = await $axios.get(apiUrl);
   }
   catch(err) {
     handleAxiosException(err);
@@ -94,16 +90,11 @@ async function fetchApiGroups({ hostAndPort, crds = false, secure = true } = {})
   return getGroups({ groups: httpResponse.data.groups });
 }
 
-async function fetchOpenApiSpec({ group = '', version = '', hostAndPort = '', secure = true } = {}) {
-  if(!hostAndPort) throw(new Error('You must specify `hostAndPort`'));
-  //if(!group) throw(new Error('You must specify an API `group`'));
-  //if(!version) throw(new Error('You must specify an API `version`'));
-
+async function fetchOpenApiSpec($axios, { group = '', version = '' } = {}) {
   var httpResponse;
 
   //const groupVersion = group ? `${group}/${version}` : version;
   const buildUrlFns = [
-    () => `http${secure ? 's' : ''}://${hostAndPort}`,
     () => `${group ? [k8sCrdOpenApiPath, '/'].join('') : k8sCoreOpenApiPath}`,
     () => `${group ? [group, '/'].join('') : ''}`,
     () => `${group && version ? version : ''}`
@@ -111,7 +102,7 @@ async function fetchOpenApiSpec({ group = '', version = '', hostAndPort = '', se
   const apiUrl = buildUrlFns.reduce((accum, fn) => accum.concat(fn()), []).join('');
 
   try {
-    httpResponse = await axios.get(apiUrl);
+    httpResponse = await $axios.get(apiUrl);
   }
   catch(err) {
     handleAxiosException(err);

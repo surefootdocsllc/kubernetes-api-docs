@@ -1,28 +1,35 @@
+const axios = require('axios');
 const { default: PQueue } = require('p-queue');
 
 const { fetchApiGroups, fetchApiGroupResources, fetchOpenApiSpec, extractOpenApiSchema } = require('./lib');
 
 // Get a specific schema for a known resource
-async function getSchema({ kind = '', group = '', version = '', hostAndPort = '' } = {}) {
-  const openApiSpec = await fetchOpenApiSpec({ group, version, hostAndPort, secure: false });
+async function getSchema($axios, { kind = '', group = '', version = '' } = {}) {
+  const openApiSpec = await fetchOpenApiSpec($axios, { group, version });
   return extractOpenApiSchema(openApiSpec, { kind, group, version });
 }
 
 /**
  * Fetch all API resources available in the cluster
 */
-async function getAllResources({ hostAndPort = '', secure = true } = {}) {
-  const groups = await fetchApiGroups({ hostAndPort, secure, crds: true });
+async function getAllResources($axios) {
+  const groups = await fetchApiGroups($axios, { crds: true });
 
   const resources = await Promise.all([
-    fetchApiGroupResources({ hostAndPort, secure }),
-    ...groups.map(({ name: group, version }) => fetchApiGroupResources({ hostAndPort, secure, group, version }))
+    fetchApiGroupResources($axios),
+    ...groups.map(({ name: group, version }) => fetchApiGroupResources($axios, { group, version }))
   ]);
 
   return resources.flat();
 }
 
-module.exports = {
-  getAllResources,
-  getSchema
+module.exports = ({ apiBaseUrl = 'http://localhost:8001' } = {}) => {
+  const $axios = axios.create({
+    baseURL: apiBaseUrl
+  });
+
+  return {
+    getAllResources: getAllResources.bind(null, $axios),
+    getSchema: getSchema.bind(null, $axios)
+  };
 };
