@@ -23,7 +23,7 @@ export const links = () => [
 
 // For /@stoplight/mosaic/core.esm.js
 const script = `
-if(window) {
+if(document) {
   window.process = {
     env: {
       TEST_SSR: false,
