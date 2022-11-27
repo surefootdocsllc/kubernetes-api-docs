@@ -115,7 +115,7 @@ async function fetchOpenApiSpec($axios, { group = '', version = '' } = {}) {
 function extractOpenApiSchema(schema = {}, { kind, group, version } = {}) {
   if(!schema.openapi) throw(new Error('You must specify a valid OpenAPI `schema`'));
   if(!kind) throw(new Error('You must specify `kind`'));
-  if(!group) throw(new Error('You must specify `group`'));
+  if(typeof group != 'string') throw(new Error('You must specify `group`'));
   if(!version) throw(new Error('You must specify `version`'));
 
   const { components: { schemas = {} } = {} } = schema;
