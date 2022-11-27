@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLoaderData } from "@remix-run/react";
 import {
   Links,
@@ -8,26 +9,15 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { json } from "@remix-run/node";
+import { Grid, Header } from 'semantic-ui-react';
 
-import fetchOpenApis from "fetch-openapis";
+import InjectWindowProcess from "./components/InjectWindowProcess";
+import ApiList from "./components/ApiList";
 
-import { Grid, List, Button } from 'semantic-ui-react';
+import { getResources } from './apis/index.server';
 
 import semanticUiStyles from 'semantic-ui-css/semantic.min.css';
 import globalStyles from './styles/global.css';
-//import styles from "./styles/tailwind.css";
-
-// For /@stoplight/mosaic/core.esm.js
-const script = `
-if(document) {
-  window.process = {
-    env: {
-      TEST_SSR: false,
-      NODE_ENV: 'production'
-    }
-  };
-}
-`;
 
 export const meta = () => ({
   charset: "utf-8",
@@ -41,30 +31,31 @@ export const links = () => [
 ];
 
 export async function loader() {
-  const { getAllResources } = fetchOpenApis();
-  const data = await getAllResources();
-  return json(data);
+  return json(await getResources());
 }
 
 export default function App() {
-  const apis = useLoaderData();
+  const [ apis, setApis ] = useState(useLoaderData());
+
   return (
     <html lang="en">
       <head>
         <Meta />
         <Links />
-        <script dangerouslySetInnerHTML={{__html: script}} />
+        <InjectWindowProcess />
       </head>
       <body>
         <Grid>
-          <Grid.Column key='a' width={3}>
-            <List>
-            {
-              apis.map(({ kind, group, version }, idx) => <List.Item key={idx} as="a">{kind}</List.Item>)
-            }
-            </List>
+          <Grid.Column width={3}>
+            <Header as='h1' dividing>
+            Cluster APIs
+            </Header>
+            <ApiList apis={apis} />
           </Grid.Column>
-          <Grid.Column key='b' width={13} stretched>
+          <Grid.Column width={13}>
+            <Header as='h1' dividing>
+            Schema viewer
+            </Header>
             <Outlet />
           </Grid.Column>
         </Grid>
