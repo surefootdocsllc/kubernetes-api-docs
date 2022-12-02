@@ -42,6 +42,10 @@ const handleAxiosException = err => {
   else if(request) {
     console.error(`${err.message}`);
   }
+  else if(err.code == 'ERR_BAD_REQUEST') {
+    const {config: { baseURL, method, url } } = err;
+    console.log(`${err.code}: ${method} ${baseURL}${url}`);
+  }
   else {
     console.log(err.message);
     console.log(err.stack);

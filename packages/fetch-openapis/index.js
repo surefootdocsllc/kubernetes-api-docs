@@ -1,6 +1,7 @@
 const axios = require('axios');
-const { default: PQueue } = require('p-queue');
+//const { default: PQueue } = require('p-queue');
 
+const { getAxiosConfig } = require('./lib/helpers');
 const { fetchApiGroups, fetchApiGroupResources, fetchOpenApiSpec, extractOpenApiSchema } = require('./lib');
 
 // Get a specific schema for a known resource
@@ -23,10 +24,16 @@ async function getAllResources($axios) {
   return resources.flat();
 }
 
-module.exports = ({ apiBaseUrl = 'http://localhost:8001' } = {}) => {
-  const $axios = axios.create({
-    baseURL: apiBaseUrl
+// TODO - If baseURL is not a valid URL, probably need to throw an exception
+// because this is fatal.
+module.exports = ({ apiBaseUrl = 'http://localhost:8001', token = '', caCertPath = '' } = {}) => {
+  const config = getAxiosConfig({
+    apiBaseUrl,
+    token,
+    caCertPath
   });
+
+  const $axios = axios.create({ ...config });
 
   return {
     getAllResources: getAllResources.bind(null, $axios),

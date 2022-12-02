@@ -5,7 +5,7 @@ import invariant from "tiny-invariant";
 import { Header } from 'semantic-ui-react';
 import { JsonSchemaViewer } from "@stoplight/json-schema-viewer";
 
-import fetchOpenApis from "fetch-openapis";
+import { getSchema } from '../apis/index.server';
 
 import stoplightElementsStyles from '@stoplight/elements/styles.min.css';
 
@@ -16,15 +16,13 @@ export const links = () => [
 export const loader = async ({ params }) => {
   const { kind, version } = params;
   // An empty group maps to builtin APIs like Pod and Container
-  const group = params.group == '_' ? '' : params.group;
-  const { getSchema } = fetchOpenApis();
+  const group = params.group == '_' ? '' : (params.group ?? '');
 
   invariant(kind, '');
-  //invariant(group, '');
+  invariant((typeof group == 'string'), '');
   invariant(version, '');
 
-  const data = await getSchema({ kind, group, version });
-  return json(data);
+  return json(await getSchema({ kind, group, version }));
 };
 
 export default function GroupVersionKindRoute() {
