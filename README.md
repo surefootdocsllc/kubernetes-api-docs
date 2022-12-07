@@ -48,7 +48,7 @@ spec:
         app: kasv
     spec:
       containers:
-      - name: ksav
+      - name: kasv
         image: jboxman0/kasv:<tag>
         imagePullPolicy: Always
         ports:
