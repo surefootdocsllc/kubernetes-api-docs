@@ -1,6 +1,7 @@
 # misc
 .DS_Store
 .vscode
+.github/.secrets
 
 # npm
 node_modules
