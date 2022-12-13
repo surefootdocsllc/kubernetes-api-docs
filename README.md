@@ -27,7 +27,7 @@ KASV queries the Kubernetes API server to determine what APIs are available on y
 You can install KASV as a deployment to your Kubernetes cluster. For example, the following configuration works on an OpenShift cluster. You need to expose the application in whatever way is most appropriate for your cluster. On OpenShift, specifying an `Ingress` object creates a `Route` object internally.
 
 Additionally, you'll need to provide the following values:
-- `<tag>`: Specify a tag for `jboxman0/kasv` from the [available tags](https://hub.docker.com/r/jboxman0/kasv/tags) at Docker Hub or use `latest`
+- `<tag>`: Specify a tag for `ghcr.io/jboxman/kasv` from the [available tags](https://github.com/jboxman/kubernetes-api-docs/pkgs/container/kasv/versions) or use `latest`
 - `<cluster_domain>`: Specify the apps domain for your cluster. On OpenShift, enter the following command to retrieve your cluster's domain: `oc get -n openshift-config ingresses.config.openshift.io/cluster -o jsonpath='{.spec.domain}'`
 
 ```yaml
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: kasv
-        image: jboxman0/kasv:<tag>
+        image: ghcr.io/jboxman/kasv:<tag>
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
